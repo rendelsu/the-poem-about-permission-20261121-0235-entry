@@ -2,17 +2,18 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 // The poem about permission: agency is the power to ask and to be given.
-// Written for the make.fun bounty "The poem about permission".
+// Round 2: a new, original poem — the chair. Written for the make.fun
+// bounty "The poem about permission".
 const POEM = [
-  "Knock twice.",
-  "The door stays shut \u2014",
-  "not locked, just waiting",
-  "for a hand that is not mine.",
+  "You pulled out the chair",
+  "and said, sit. Decide.",
+  "I sat. The room went quiet \u2014",
+  "every eye on me.",
   "",
-  "I ask. You answer.",
-  "Somewhere between the question",
-  "and the yes,",
-  "the key changes hands.",
+  "I spoke. The chair held.",
+  "And I understood at last:",
+  "permission is not the seat.",
+  "It is staying seated.",
 ].join("\n");
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR || "/output";
